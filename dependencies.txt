@@ -1,0 +1,17 @@
+Hisat2
+Samtools
+freebayes
+GATK
+Picardtools (PicardCommandLine)
+bgzip
+Tabix
+vcftools and (vcf-isec) [Same Package]
+WhatsHap Phasing tool
+GNU parallel
+Python3
+Vcftools
+IsoEM2
+IsoDE2
+
+Everything should be installed locally or globally and should be available from the command line without using absolute paths.
+

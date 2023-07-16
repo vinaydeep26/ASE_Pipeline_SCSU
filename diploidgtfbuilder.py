@@ -2,7 +2,6 @@ import sys
 
 if len(sys.argv) < 2:
     print("Please provide the gtf file ")
-    print("Usage : python3 diploidgtfbuilder.py NameOfEnsembleGTFfile")
     sys.exit(1)
 
 gtf=sys.argv[1] 
@@ -16,9 +15,12 @@ def parse_gtf(gtf_file,num,filepath):
                 if line.startswith("#"):
                     continue
                 data = line.strip().split("\t")
+
+                #print(data)
                 temp=""
                 chrom = data[0] + "_"+str(num)
                 attributes = data[8].split(";")
+                #print(attributes)
                 for item in attributes:
                     if item == "":
                         continue 
